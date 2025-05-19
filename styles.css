@@ -1,0 +1,170 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styling */
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Blog Post Styling */
+.blog-post .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #333;
+}
+
+.post-meta {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    line-height: 1.7;
+    font-size: 1.1em;
+}
+
+/* Ordered List Styling */
+ol {
+    margin-left: 20px;  /* Add margin for better readability */
+    margin-bottom: 20px; /* Spacing between lists and next elements */
+    padding-left: 15px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Unordered List Styling */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+    .blog-post .container {
+        max-width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+    
+    .post-title {
+        font-size: 1.75em;
+    }
+    
+    .post-content {
+        font-size: 1em;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 500px) {
+    .post-title {
+        font-size: 1.5em;
+    }
+
+    .post-content {
+        font-size: 0.95em;
+    }
+
+    ol {
+        margin-left: 15px; /* Slightly reduced for smaller screens */
+        padding-left: 10px;
+    }
+
+    ul {
+        margin-left: 15px;
+        padding-left: 10px;
+    }
+
+    .post-image {
+        border-radius: 4px;
+    }
+
+    .navbar a {
+        margin-left: 10px;
+    }
+}
